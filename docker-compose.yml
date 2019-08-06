@@ -6,7 +6,7 @@ services:
     depends_on:
       - db
     container_name: misp_web
-    image: misp:latest
+    image: moshemal/misp:${MISP_VERSION}
     restart: unless-stopped
     ports:
       - "80:80"
