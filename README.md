@@ -1,7 +1,7 @@
 MISP Docker
 ===========
 
-[![](https://travis-ci.org/yaleman/misp-docker.svg?branch=master)](https://travis-ci.org/yaleman/misp-docker)
+[![](https://travis-ci.org/MISP/misp-docker.svg?branch=master)](https://travis-ci.org/yaleman/misp-docker)
 
 The files in this repository are used to create a Docker container running a [MISP](http://www.misp-project.org) ("Malware Information Sharing Platform") instance.
 
@@ -32,10 +32,10 @@ Included is an optional Docker Compose file 'docker-compose-nginx.yml' to spin u
 ```
 $ git clone https://github.com/MISP/misp-docker
 $ cd misp-docker
+# Copy template.env to .env (on the root directory) and edit the environment variables at .env file
+$ cp template.env .env
+$ vi .env
 ```
-## Fix your environment
-Copy template.env to .env (on the root directory) and edit the environment variables at .env file
-
 
 ## Build the containers
 ```
